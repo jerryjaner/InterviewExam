@@ -7,9 +7,9 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## TO Run the Interview Exam
+## To Run the Interview Exam
 
-Please following the step by step procedure:
+Please follow the step by step procedure:
 
 - Run git clone https://github.com/jerryjaner/InterviewExam.git
 - Go to the folder application using cd command on your cmd or terminal
