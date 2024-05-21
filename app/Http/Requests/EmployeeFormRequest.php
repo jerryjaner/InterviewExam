@@ -22,13 +22,19 @@ class EmployeeFormRequest extends FormRequest
     public function rules(): array
     {
         return [
-
             'firstname' => 'required',
             'lastname' => 'required',
             'email' => 'nullable|email',
-            'phone' => 'nullable',
+            'phone' => 'nullable|regex:/^09\d{9}$/',
             'company_id' => 'nullable',
-            
         ];
     }
+
+    public function messages(): array
+    {
+        return [
+            'phone.regex' => 'The phone number must start with "09" and have 11 digits in total.',
+        ];
+    }
+
 }

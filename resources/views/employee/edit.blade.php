@@ -46,13 +46,18 @@
 
                             <div class="mb-3">
                                 <label for="">Company</label>
-                                <select name="company"  class="form-select form-control @error('company') is-invalid @enderror">
-                                    <option>{{ $employee->company->name }}</option>
+                                <select name="company_id" class="form-select form-control @error('company_id') is-invalid @enderror">
+                                   
+                                    <option value="{{ $employee->company->id }}">{{ $employee->company->name }}</option>
+                                    
                                     @foreach($companies as $company)
-                                      <option value="{{ $company->id }}">{{ $company->name }}</option>
+                                        @if($employee->company_id != $company->id)
+                                            <option value="{{ $company->id }}">{{ $company->name }}</option>
+                                        @endif
                                     @endforeach
-                                </select>
-                                @error('company')
+                                </select> 
+
+                                @error('company_id')
                                         <div class="text-danger">{{ $message }} </div>
                                 @enderror
                             </div>

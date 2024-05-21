@@ -98,7 +98,7 @@ class EmployeeController extends Controller
         $employee->lastname = $request->lastname;
         $employee->email = $request->email;
         $employee->phone = $request->phone;
-        $employee->company_id = $request->company;
+        $employee->company_id = $request->company_id;
         $employee->update();
 
         $notification = array(
@@ -119,7 +119,7 @@ class EmployeeController extends Controller
         
         // Redirect back with success message
         $notification = array(
-            
+
             'message' => 'Employee deleted successfully',
             'alert-type' => 'warning'
         );
