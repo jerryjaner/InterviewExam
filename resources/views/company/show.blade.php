@@ -36,7 +36,7 @@
                             </div>
 
                             <div class="mb-3" >
-                                <label for="" >Old Logo</label>
+                                <label for="" >Logo</label>
                                 @if($company->logo)
                                     <img src="{{ asset('storage/logo/' . $company->logo) }}" alt="Company Logo" width="100" height="100" class="img-fluid">
                                 @else

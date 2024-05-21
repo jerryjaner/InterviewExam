@@ -16,13 +16,13 @@
                 </div> --}}
                 
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('company.index')" :active="request()->routeIs(['company.index', 'company.create', 'company.edit'])">
+                    <x-nav-link :href="route('company.index')" :active="request()->routeIs(['company.index', 'company.create', 'company.edit', 'company.show'])">
                         {{ __('Company') }}
                     </x-nav-link>
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('employee.index')" :active="request()->routeIs(['employee.index', 'employee.create','employee.edit'])">
+                    <x-nav-link :href="route('employee.index')" :active="request()->routeIs(['employee.index', 'employee.create','employee.edit', 'employee.show'])">
                         {{ __('Employee') }}
                     </x-nav-link>
                 </div>

@@ -13,12 +13,11 @@ return new class extends Migration
     {
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('company_id')->nullable()->constrained();
+            $table->foreignId('company_id')->nullable()->constrained('companies');
             $table->string('firstname')->nullable();
             $table->string('lastname')->nullable();
             $table->string('email')->nullable();
             $table->string('phone')->nullable(); 
-            
             $table->timestamps();
 
             
