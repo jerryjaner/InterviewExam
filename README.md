@@ -20,4 +20,6 @@ Please follow the step by step procedure:
 - Run php artisan migrate --seed
 - Run php artisan serve
 - Go to http://127.0.0.1:8000
+- Your Email address : qxit@quantumx.com
+- Your Password: interview@qxit
 
