@@ -18,6 +18,7 @@ Please follow the step by step procedure:
 - Open your .env file and change the database name (DB_DATABASE) to qxitinterviewdb
 - Run php artisan key:generate.
 - Run php artisan migrate --seed
+- Run php artisan storage:link to link the image 
 - Run php artisan serve
 - Go to http://127.0.0.1:8000
 - Your Email address : qxit@quantumx.com
